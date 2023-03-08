@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemple de duplication de division avec JavaScript</title>
+	<style>
+		#maDivision {
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			margin: 10px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div id="maDivision"></div>
+
+	<button onclick="dupliquer()">Dupliquer</button>
+
+	<script>
+		function dupliquer() {
+			var nouvelleDivision = document.createElement("div");
+			nouvelleDivision.setAttribute("id", "maDivision");
+			document.body.appendChild(nouvelleDivision);
+		}
+	</script>
+</body>
+</html>
+
